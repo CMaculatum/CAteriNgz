@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registerPage</title>
+
+    <link rel="stylesheet" href="/CSS/navigationBar.css">
+    <link rel="stylesheet" href="/CSS/registerPage.css">
+    <script src="/JS/registerPage.js"></script>
+    <link rel="stylesheet" href="/CSS/footerBar.css">
+</head>
+<body>
+    <header>
+        <div class="navigationBar">
+            <div class="logo">
+                <img src="/Assets/LOGO.png" alt="CAteriNgz">
+            </div>
+            <nav>   
+                <a href="homePage.html">HOME</a>
+                <a href="productsPage.html">PRODUCTS</a>                
+                <a href="testimonialPage.html">TESTIMONIAL</a>
+                <a href="aboutUsPage.html">ABOUT US</a>
+                <a href="registerPage.html">REGISTER</a>          
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+
+        <div class="wrapper">
+
+            <h2 class="sectionTitle">Register Form</h2>
+
+            <div class="wrapperMinTitle">
+                <div class="contentLeft">
+                    <img src="/Assets/LOGO.png" alt="CAteriNgz">
+                </div>
+
+                <form action="" method="post" id="register-form">
+    
+                    <div class="formData">
+                        <label for="">Name</label>
+                        <input type="text", name="name" id="name" placeholder="E.g. Sylvana Marine Purnomo">
+                    </div>
+    
+                    <div class="formData">
+                        <label for="">Email</label>
+                        <input type="email", name="email" id="email" placeholder="E.g. sylvana@gmail.com">
+                    </div>
+    
+                    <div class="formData">
+                        <label for="">Address</label>
+                        <input type="text", name="address" id="address" placeholder="E.g. Street123, Cipete, Jakarta, Indonesia">
+                    </div>
+    
+                    <div class="formData">
+                        <label for="">Gender</label>
+    
+                        <select name="gender" id="gender">
+                            <option value="none">(none)</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>             
+                    </div>
+    
+                    <div class="formData">
+                        <label for="">Date of Birth</label>
+                        <input type="date", name="dob" id="dob">
+                    </div>
+    
+    
+                    <div class="button">
+                        <button type="reset" class="btn">Reset Fill</button>
+                        <button type="button" onclick="validateAll()" class="btn">Register</button>
+                    </div>
+    
+                </form>
+    
+            </div>
+
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerBar">
+            <div class="footerLogo">
+                <img src="/Assets/LOGO.png" alt="CAteriNgz">
+            </div>
+
+            <div class="footerLinks">
+                <a href="/HTML/homePage.html">Home</a>
+                <a href="/HTML/productsPage.html">Product</a>
+                <a href="/HTML/testimonialPage.html">Testimonial</a>
+                <a href="/HTML/aboutUsPage.html">About Us</a>
+                <a href="/HTML/registerPage.html">Register</a>
+            </div>
+
+            <div class="footerMedia">
+                <a href="https://facebook.com">Facebook</a>
+                <a href="https://instagram.com">Instagram</a>
+                <a href="https://www.gojek.com/">gofood</a>
+                <a href="https://www.grab.com/">Grab</a>
+            </div>
+
+            <div class="footerCopyright">
+                <h2>Copyright © 2024</h2>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
