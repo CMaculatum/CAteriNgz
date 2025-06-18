@@ -1,0 +1,84 @@
+.groupOfImage {
+    
+    background-color: #f8e29acc;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.sectionTitle {
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
+.scrollImagesHor {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.foodBox {
+    background-color: #f8e29a;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+    padding-bottom: 5px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+.price p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.realPrice {
+    text-decoration: line-through;
+}
+
+.promoPrice {
+    color: red;
+    font-size: 30px;
+}
+
+.scrollImagesHor img{
+    max-width: 100%;
+    height: 350px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.scrollImagesHor p {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .foodBox {
+        width: 100%;
+    }
+    .scrollImagesHor img {
+        max-width: 90%;
+        border-radius: 20px;
+        margin-top: 15px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 376px) {
+    .scrollImagesHor img {
+        width: 90%;
+        border-radius: 20px;
+        margin-top: 15px;
+        max-height: 200px;
+    }
+}

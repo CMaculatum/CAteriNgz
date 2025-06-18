@@ -1,0 +1,126 @@
+.content {
+    padding-top: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper { 
+    max-width: 98%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 800px;
+    padding: 30px;
+    border-radius: 12.5px;
+    box-sizing: border-box;
+    background-color: #f8e29acc;
+    gap: 0px;
+    height: 650px;
+
+
+}
+
+.contentLeft {
+    margin-top: 20px;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.contentLeft img {
+    margin: auto;
+    width: 350px;
+}
+
+.wrapperMinTitle {
+    gap: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionTitle {
+    padding-top: 1px;
+    letter-spacing: 0.5px;
+}
+
+.formData {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.form, .type-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+  
+input, select {
+    background-color: #c5af68;
+    height: 35px;
+    width: 260px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+select {
+    width: 283.2px;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 15px;
+}
+  
+.buttons {
+    /* display: flex; */
+    gap: 10px;
+ }
+
+.btn {
+    display: block;
+    margin: 20px auto 0;
+    margin-top: 20px;
+    text-align: center;
+    padding: 8px;
+    height: 40px;
+    width: 90%;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+  
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        height: 100%;
+    }
+    .contentLeft {
+        margin-top: 0px;
+    }
+    .contentLeft img {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .wrapperMinTitle {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+
+}

@@ -1,0 +1,66 @@
+.outerBox {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f8e29acc;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    
+    
+}
+
+.outerBox h1 {
+    margin-bottom: 0px;
+}
+
+.groupPersonBox {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.personBox {
+    display: inline-flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    gap: 0px;
+
+    height: 600px;
+    margin: auto;
+    width: 40%;
+    background-color: #f8e29a;
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px;
+    align-items: center;
+}
+
+.personBox img {
+    
+    width: 400px;
+    max-width: 90%;
+    border-radius: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.personBox h2 {
+    margin-bottom: 3px;
+}
+
+.personBox p {
+    margin: auto;
+    margin-bottom: 10px;
+    max-width: 90%;
+}
+
+@media (max-width: 768px) {
+    .groupPersonBox {
+        flex-direction: column;
+    }
+    .personBox {
+        width: 80%;
+    }
+}

@@ -1,0 +1,102 @@
+body, h1, h2, button, label {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: url('/Assets/backgroundBody.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navigationBar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #D32F2F;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo img {
+    margin-top: 5px;
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    height: 50%;
+    gap: 9px;
+    transition: gap 0.3s;
+}
+
+nav a {
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    transition: font-size 0.3s;
+}
+
+nav a:hover {
+    color: #FBC02D;
+}
+
+/* buat selain navBar */
+.content {
+    margin-top: 90px;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: flex-start;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.smallDesc {
+    font-size: 13px;
+}
+
+.datetime {
+    background-color: #f8e29a;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        margin-top: 5px;
+        width: 50px;
+    }
+    nav {
+        gap: 5px;
+    }
+    nav a {
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+    .content {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 431px) {
+    .logo img {
+        margin-top: 5px;
+        width: 50px;
+    }
+    nav {
+        gap: 0px;
+    }
+    nav a {
+        font-size: 9px;
+        padding: 8px 12px;
+    }
+}

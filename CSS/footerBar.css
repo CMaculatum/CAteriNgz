@@ -1,0 +1,33 @@
+.footerBar {
+    
+    margin-top: 20px;
+    background-color: #3a0e0e;
+    padding: 10px;
+    /* margin-top: 10px; */
+    color: white;
+    text-align: center;
+}
+
+.footerLogo img{
+    width: 75px;
+}
+
+.footerLinks , .footerMedia {
+    margin: 10px 0;
+}
+
+.footerLinks a , .footerMedia a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footerLinks a:hover , .footerLinks a:hover {
+    color: #FBC02D;
+}
+
+@media (max-width: 431px) {
+    .footerLinks a , .footerMedia a {
+        font-size: 12px;
+    }
+}

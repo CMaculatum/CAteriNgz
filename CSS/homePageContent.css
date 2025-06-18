@@ -1,0 +1,100 @@
+.content {
+    gap: 20px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.contentLeft {
+    margin-top: 20px;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.information, .recommendation, .promo {
+    background-color: #f8e29acc;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.promo {
+
+    margin-top: 20px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sectionTitle {
+    margin-bottom: 10px;
+}
+
+.scrollImagesHor {
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.scrollImagesHor img {
+    /* width: auto; */
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.scrollImagesVer {
+    overflow-y: auto;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.scrollImagesVer img {
+    max-width: 80%;
+    border-radius: 20px;
+}
+
+
+@media (min-width: 769px) {
+    .content {
+        margin-left: 30px;
+    }
+    .datetime {
+        position: fixed;
+        transform: rotate(-90deg);
+        left: -75px;
+        top: 200px;
+
+    }
+}
+@media (max-width: 768px) {
+    .datetime{
+        width: 100%;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .contentLeft {
+        width: 100%;
+    } 
+    .information ,.recommendation {
+        margin-right: 10px;
+    }
+    .information p {
+        margin: auto;
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+    .scrollImagesHor img {
+        max-width: 80%;
+    }
+    .promo {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
